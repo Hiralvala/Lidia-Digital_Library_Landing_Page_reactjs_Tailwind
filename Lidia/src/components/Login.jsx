@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -10,7 +11,7 @@ const Login = () => {
 
         <div className='shadow-2xl rounded-md px-6 pt-8 pb-4 border-t-2 border-t-primary md:px-[55px] md:pt-12 md:pb-8'>
           
-            <p className='text-paragraph md:text-lg'><a className='active:text-primary'>Home</a> / <a className='active:text-primary '>Login</a></p>
+            <p className='text-paragraph md:text-lg'><Link className='active:text-primary text-primary' to='/'>Home</Link> / <a className='active:text-primary '>Login</a></p>
 
 
             <h1 className='mt-4 font-semibold text-lg md:text-xl'>Login</h1>
@@ -24,7 +25,7 @@ const Login = () => {
 
             <button className='bg-primary text-white w-full py-1.5 rounded-md mt-5 text-lg'>Login</button>
         </div>
-        <p className='text-paragraph mt-10 md:text-lg'>Don’t have an account? <span className='text-primary'>Create one!</span></p>
+        <p className='text-paragraph mt-10 md:text-lg'>Don’t have an account? <Link className='text-primary' to='/register'>Create one!</Link></p>
         <p className='text-paragraph m-4 md:text-lg'>© 2024 Lidia. All rights reserved.</p>
 
     </section>

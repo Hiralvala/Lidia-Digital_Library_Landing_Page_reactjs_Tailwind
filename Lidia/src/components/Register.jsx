@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -8,7 +9,7 @@ const Register = () => {
         <img src={logo} alt="" className='w-[80px] my-10 md:w-[100px] '/>
 
         <div className='shadow-2xl rounded-md px-6 pt-8 pb-4 border-t-2 border-t-primary md:px-[55px] md:pt-12 md:pb-8'>
-            <p className='text-paragraph md:text-lg'><a href="" className='active:text-primary'>Home</a> / <a href='' className='active:text-primary'>Sign-up</a></p>
+            <p className='text-paragraph md:text-lg'><Link to="/" className='active:text-primary text-primary'>Home</Link> / <a href='' className='active:text-primary'>Sign-up</a></p>
 
             <h1 className='mt-4 font-semibold text-lg md:text-xl'>Sign-up</h1>
             <p className='text-paragraph text-base md:text-[17px] mt-1'>Register yourself to do something on Lidia.</p>
@@ -19,7 +20,7 @@ const Register = () => {
                     <input type="text" name="" id="" className='focus:border-primary focus:outline-none border pl-2 w-full rounded-md py-1 md:py-1.5 mt-1 focus:border-2 ' placeholder='Muhammad Alfian'/>
                 </div>
                 <div>
-                    <h2 className='mt-3 sm:mt-1 font-semibold text-[17px] md:text-[18px] '>Nik</h2>
+                    <h2 className='mt-3 sm:mt-1 font-semibold text-[17px] md:text-[18px] '>NIK</h2>
                     <input type="text" name="" id="" className='focus:border-primary focus:outline-none border pl-2 w-full rounded-md py-1 md:py-1.5 mt-1 focus:border-2 ' placeholder='e.g. 1050241708900001'/>
                 </div>
                 <div>
