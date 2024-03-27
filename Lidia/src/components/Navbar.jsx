@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/logo.png";
 import { navLinks } from "../constants/constants";
 import menu from "../assets/menu.svg";
@@ -8,6 +8,19 @@ import { Link } from "react-router-dom";
 
 const  Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  // let menuRef= useRef();
+  // useEffect(()=>{
+  //   let handler=(e)=>{
+  //     if(!menuRef.current.contains(e.target)){
+  //       setToggle(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown",handler)
+  //   return()=>{
+  //     document.removeEventListener("mousedown",handler)
+  //   }
+  // })
   return (
     <nav className=" flex flex-1 w-screen h-[43px] my-3 px-5 items-center justify-between ">
       <div className="flex w-[79px] items-center z-[3] sm:hidden ">
@@ -18,7 +31,7 @@ const  Navbar = () => {
       </div>
 
       <div className="flex sm:hidden">
-        <div className="w-[34px] h-[34px] bg-gradient-to-br from-menu from-50% rounded-[50%] p-[1px] flex justify-center items-center mx-2">
+        <div className="w-[34px] h-[34px] bg-gradient-to-br from-menu from-50% rounded-[50%] p-[1px] flex justify-center items-center mx-2" >
           <img
             src={`${toggle ? close : menu}`}
             alt=""
@@ -31,15 +44,16 @@ const  Navbar = () => {
           className={`absolute ${
             toggle ? "flex" : "hidden"
           } top-20 bg-white right-5 py-3 rounded-xl shadow-2xl z-20`}
+          
         >
           <ul>
-            {navLinks.map((link) => (
+            {navLinks.map(({id,title}) => (
               <li className="mx-5  ">
                 <a
-                  href="#${link.id}"
-                  className="text-unactive hover:text-primary font-plus font-semibold"
+                  href={`#${id}`}
+                  className="text-unactive hover:text-primary font-plus font-[550] text-sm"
                 >
-                  {link.title}
+                  {title}
                 </a>
               </li>
             ))}
@@ -74,13 +88,13 @@ const  Navbar = () => {
 
         <div className="h-[18px] md:ml-[120px] sm:ml-[25px] lg:ml-16">
           <ul className="flex flex-1">
-            {navLinks.map((link) => (
+            {navLinks.map(({id,title}) => (
               <li className="sm:mx-3 mx-10 md:mx-5 lg:mx-7">
                 <a
-                  href="#${link.id}"
-                  className="text-unactive   hover:text-primary  font-plus text-base md:text-lg lg:text-xl"
+                  href={`#${id}`}
+                  className="text-unactive   hover:text-primary  font-plus text-sm md:text-base lg:text-lg"
                 >
-                  {link.title}
+                  {title}
                 </a>
               </li>
             ))}

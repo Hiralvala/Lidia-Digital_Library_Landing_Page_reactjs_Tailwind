@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        plus: ["Plus","Jarkata","Sans"],
+        plus: ["Plus Jarkata Sans", "sans-serif"],
         pluss: ["plus"]
       },
       colors:{

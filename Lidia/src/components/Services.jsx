@@ -5,7 +5,8 @@ import Reading from "../assets/Reading.svg";
 const Services = () => {
   return (
     <section className="mt-12 mx-4 ">
-      <h1 className="font-plus font-extrabold text-[26px] xs:text-4xl smd:text-[40px] md:text-5xl">
+      <h1 className='text-primary text-[16px] mb-2 font-bold' id="service">SERVICES</h1>
+      <h1 className="font-plus font-bold text-[26px] xs:text-4xl smd:text-[40px] md:text-5xl">
         🚀• The Services for You
       </h1>
       <div className="flex flex-col flex-wrap mt-5 sm:flex-row">
@@ -17,14 +18,14 @@ const Services = () => {
             fairly easy on <span className="text-primary">Lidia</span>!
           </h1>
 
-          <p className="font-plus font-medium text-base text-paragraph  max-w-80 xs:max-w-[390px] ss:max-w-[410px] smm:max-w-[430px] text-center sm:text-left -translate-y-3 smm:-translate-y-7 sm:-translate-y-2.5 sm:w-auto sm:text-sm smd:max-w-[330px] md:text-lg md:max-w-[370px] md:-translate-y-1 lgx:text-xl lgx:-translate-y-5 lgx:max-w-[400px]">
+          <p className="font-plus font-medium text-paragraph  max-w-80 xs:max-w-[390px] ss:max-w-[410px] smm:max-w-[430px] text-center sm:text-left -translate-y-3 smm:-translate-y-7 sm:-translate-y-2.5 sm:w-auto smd:max-w-[330px] md:text-lg md:max-w-[370px] md:-translate-y-1  lgx:-translate-y-5 lgx:max-w-[400px] text-sm sm:text-xs smd:text-sm lgx:text-base">
             Viewing, rent, and organize your favorite books has never been
             easier. An integrated digital library rent that’s simple to use,
             Lidia lets you spend less time managing your work and more time
             actually doing it!
           </p>
 
-          <p className="font-plus font-medium text-base text-paragraph  max-w-[350px] smm:max-w-[400px] text-center sm:text-left smm:-translate-y-3 sm:w-auto sm:-translate-y-1 sm:text-sm smd:max-w-[330px] md:text-lg md:max-w-[370px] md:-translate-y-0 lgx:text-xl lgx:-translate-y-2 lgx:max-w-[400px]">
+          <p className="font-plus font-medium text-paragraph  max-w-[350px] smm:max-w-[400px] text-center sm:text-left smm:-translate-y-3 sm:w-auto sm:-translate-y-1 smd:max-w-[330px] md:text-lg md:max-w-[370px] md:-translate-y-0 lgx:-translate-y-2 lgx:max-w-[400px] text-sm sm:text-xs smd:text-sm lgx:text-base">
             Effortless rentals, personalized shelves - Lidia transforms book
             management, enhancing your reading experience~
           </p>
@@ -41,13 +42,13 @@ const Services = () => {
             <span className="text-primary">Reading</span> Instantly
           </h1>
 
-          <p className="font-plus font-medium text-base text-paragraph  max-w-80 xs:max-w-[390px] ss:max-w-[410px] smm:max-w-[430px] text-center sm:text-left -translate-y-3 smm:-translate-y-7 sm:-translate-y-3 sm:text-sm smd:max-w-[330px] md:text-lg md:max-w-[370px] lgx:text-xl lgx:-translate-y-0 lgx:max-w-[400px]">
+          <p className="font-plus font-medium text-paragraph  max-w-80 xs:max-w-[390px] ss:max-w-[410px] smm:max-w-[430px] text-center sm:text-left -translate-y-3 smm:-translate-y-7 sm:-translate-y-3 smd:max-w-[330px] md:text-lg md:max-w-[370px] lgx:-translate-y-0 lgx:max-w-[400px] text-sm sm:text-xs smd:text-sm lgx:text-base">
             Discover instant literary delight. Access a vast library, borrow
             your favorite reads, and dive into captivating stories within
             minutes. Reading made quick and easy, just a click away!
           </p>
 
-          <p className="font-plus font-medium text-base text-paragraph max-w-[350px] text-center sm:text-left smm:max-w-[400px] smm:-translate-y-3 sm:-translate-y-1.5 sm:text-sm smd:max-w-[330px] md:text-lg md:max-w-[370px] lgx:text-xl lgx:translate-y-2 lgx:max-w-[400px]">
+          <p className="font-plus font-medium text-paragraph max-w-[350px] text-center sm:text-left smm:max-w-[400px] smm:-translate-y-3 sm:-translate-y-1.5 smd:max-w-[330px] md:text-lg md:max-w-[370px] lgx:translate-y-2 lgx:max-w-[400px] text-sm sm:text-xs smd:text-sm lgx:text-base">
             Unlock a world of stories effortlessly. Browse genres, choose, rent
             in minutes. Seamlessly manage your reading adventures with our
             intuitive platform~
