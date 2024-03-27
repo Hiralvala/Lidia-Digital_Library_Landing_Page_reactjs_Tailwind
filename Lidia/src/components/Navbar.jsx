@@ -47,11 +47,13 @@ const  Navbar = () => {
         </div>
 
         <div className="w-[34px] h-[34px] bg-gradient-to-br from-menu from-50% rounded-[50%] p-[1px] flex justify-center items-center">
+          <Link to='/login'>
           <img
             src={Login}
             alt=""
             className="w-[26px] h-[26px]  rounded-[50%] "
           />
+          </Link>
         </div>
       </div>
 
